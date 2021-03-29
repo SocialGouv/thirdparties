@@ -2,6 +2,14 @@
   "name": "@socialgouv/thirdparties",
   "description": "Collection of identified third-party web trackers",
   "version": "1.0.0",
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "src/index.js",
   "license": "Apache-2.0",
   "devDependencies": {
