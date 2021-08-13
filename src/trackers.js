@@ -5,7 +5,7 @@ const trackers = [
     check: (url) =>
       url.match(/fonts\.googleapis\.com/i) || url.match(/fonts\.gstatic\.com/i),
     message:
-      "Host the font locally with https://github.com/neverpanic/google-font-download",
+      "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/",
   },
   {
     id: "google maps",
