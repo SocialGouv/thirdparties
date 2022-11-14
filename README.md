@@ -13,3 +13,4 @@ console.log(trackers);
 // check if some URL found in our collection
 console.log(find("https://path/to/some/script"));
 ```
+
