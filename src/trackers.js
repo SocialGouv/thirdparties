@@ -51,7 +51,7 @@ const trackers = [
   },
   {
     id: "cloudflare",
-    check: (url) => url.match(/\.cloudflare\.com/i),
+    check: (url) => url.match(/\.cloudflare\.com/i)|| url.match(/\.cloudflareinsights\.com/i),
     message: "Host files locally",
   },
   {
@@ -142,7 +142,7 @@ const trackers = [
   },
   {
     id: "Mailjet",
-    check: (url) => url.match(/\.mailjet\.com/i),
+    check: (url) => url.match(/\.mailjet\.com/i) || url.match(/\.mjt\.lu/i) ,
     message: "Use hosted Matomo instance",
   },
   {
@@ -157,23 +157,53 @@ const trackers = [
   },
   {
     id: "vimeo",
-    check: (url) => url.match(/\.vimeocdn\.com/i),
+    check: (url) => url.match(/\.vimeocdn\.com/i) ||url.match(/\.vimeo\.com/i) ,
     message: "use peertube",
   },
   {
     id: "taboola",
-    check: (url) => url.match(/taboola\.com/i),
+    check: (url) => url.match(/\.taboola\.com/i),
     message: "Replace with privacy-first solutions",
   },
   {
     id: "contentsquare",
-    check: (url) => url.match(/contentsquare\.net/i),
+    check: (url) => url.match(/\.contentsquare\.net/i),
     message: "Replace with privacy-first solutions",
   },
   {
     id: "criteo",
-    check: (url) => url.match(/criteo\.net/i) || url.match(/criteo\.com/i),
+    check: (url) => url.match(/\.criteo\.net/i) || url.match(/\.criteo\.com/i),
     message: "Replace with privacy-first solutions",
+  },
+  {
+    id: "crisp",
+    check: (url) => url.match(/\.crisp\.chat/i),
+    message: "Ensure your TOS notify the CRISP usage",
+  },
+  {
+    id: "framer",
+    check: (url) => url.match(/\.framerusercontent\.com/i),
+    message: "Ensure your TOS notify the Framer usage",
+  },
+  {
+    id: "optimole",
+    check: (url) => url.match(/\.optimole\.com/i),
+    message: "Ensure your TOS notify the Optimole usage",
+  },
+  {
+    id: "brevo",
+    check: (url) => url.match(/\.brevo\.com/i),
+    message: "Ensure your TOS notify the Brevo usage",
+  },
+  {
+    id: "sentry",
+    check: (url) => url.match(/\.ravenjs\.com/i),
+    message: "Ensure your TOS notify the Sentry usage",
+  },
+  {
+    id: "at-internet",
+    check: (url) => url.match(/\.aticdn\.net/i),
+    message: "Ensure your TOS notify the AT internet usage",
   },
 ];
 
