@@ -13,7 +13,7 @@ jobs:
       - name: Set up Node.js 20
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 20
+          node-version: 22
 
       - uses: actions/checkout@v3
 
